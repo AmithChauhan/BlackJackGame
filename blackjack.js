@@ -1,8 +1,8 @@
-let card1,card2,card3,card=[1,2,3],sum,hasBlackJack,isAlive,msg,msgSum,msgCard,x=0;
+let card1,card2,card3,card,sum,hasBlackJack,isAlive,msg,msgSum,msgCard,x=0;
 function initialise()
 { 
-    card1=Math.floor(Math.random()*14)+1;
-    card2=Math.floor(Math.random()*14)+1;
+    card1=Math.floor(Math.random()*13)+1;
+    card2=Math.floor(Math.random()*13)+1;
     card=[card1,card2];
     sum=card1+card2;
     hasBlackJack=false;
@@ -42,7 +42,7 @@ function newCard()
 {
     if(isAlive&&!hasBlackJack)
     {
-        let card3=Math.floor(Math.random()*14)+1;
+        let card3=Math.floor(Math.random()*13)+1;
         card.push(card3);
         sum+=card[2];
         msgCard+=" "+card[2];
